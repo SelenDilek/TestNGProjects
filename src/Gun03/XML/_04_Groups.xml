@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mySuite">
+    <test name="myTest1">
+        <groups>
+            <run>
+
+                <include name="Smoke Test" ></include>
+
+            </run>
+        </groups>
+
+        <classes>
+            <class name="Gun03._04_Groups"></class>
+
+        </classes>
+    </test>
+</suite>
+
+        <!--"classes" öncesine "groups" diye açıp "run" diyip "include name"= çalışacak @Test group ismi yazılır. -->
+        <!--"Bu şekilde istenen test grubu çalıştırılır. -->
+

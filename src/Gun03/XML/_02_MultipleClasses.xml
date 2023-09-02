@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- burasi notlarimiz -->
+
+<suite name="mySuite">
+    <test name="myTest1">
+        <classes>
+
+            <class name="Gun03._02_Intro"></class>
+            <class name="Gun03._03_Intro"></class>
+
+        </classes>
+    </test>
+</suite>

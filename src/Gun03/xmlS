@@ -1,0 +1,30 @@
+XML  yapısı
+
+TestNG XML dosyası
+çoklu çalıştırmalar,parametre göndermeler,
+paralel testler,grup çalıştırmalar
+
+<suit name="anaSuit">
+
+ <test name="myTest1">
+    <classes>
+       <class name="intro2"></class>
+       <class name="intro2"></class>
+    </classes>
+
+ </test>
+
+</suit>
+
+
+
+
+
+
+
+//not : xml icin pluggin eklenir. file-> settings->Plugin->marketplace->testNg xml
+sonra class uzerine gel sag tik Create testngxml
+
+xml dosyanina git -> ctrl+alt+L = yazilari duzenler
+
+class bazli calistiracaksak yani classlari bir arada calistiracaksak classlari alt altta yazariz.

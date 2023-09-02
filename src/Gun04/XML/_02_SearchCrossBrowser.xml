@@ -1,0 +1,27 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Suite">
+    <test name="myTest1">
+        <!-- arka arkaya calistirir es zamanli degil -->
+        <parameter name="searchText" value="mac"></parameter>
+        <parameter name="browserTipi" value="edge"></parameter>
+        <classes>
+            <class name="Gun04._02_SearchParameterDriver">
+
+            </class>
+        </classes>
+    </test>
+
+    <test name="myTest2">
+        <parameter name="searchText" value="mac"></parameter>
+        <parameter name="browserTipi" value="firefox"></parameter>
+        <classes>
+            <class name="Gun04._02_SearchParameterDriver">
+
+            </class>
+        </classes>
+    </test>
+
+</suite>
+
+<!-- Crossbrowser arka arkaya calisir ve suite bir sey yazilmaz , paralel test ayni anda calisir suite paralel yazariz ve ayni anda calismasini isteriz-->

@@ -1,0 +1,45 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Suite" parallel="tests" thread-count="3">
+    <!-- Beraber calisir cunku paralel test (es zamanli)
+         paralel hangi islemler yapilacak ? testler
+          thread count , kac defa yapilacak ? 3-->
+    <test name="myTest1">
+        <parameter name="searchText" value="mac"></parameter>
+        <parameter name="browserTipi" value="edge"></parameter>
+        <classes>
+            <class name="Gun04._02_SearchParameterDriver">
+
+            </class>
+        </classes>
+    </test>
+
+    <test name="myTest2">
+        <parameter name="searchText" value="samsung"></parameter>
+        <parameter name="browserTipi" value="firefox"></parameter>
+        <classes>
+            <class name="Gun04._02_SearchParameterDriver">
+
+            </class>
+        </classes>
+    </test>
+
+    <test name="myTest3">
+        <parameter name="searchText" value="mac"></parameter>
+        <parameter name="browserTipi" value="edge"></parameter>
+        <classes>
+            <class name="Gun04._02_SearchParameterDriver">
+
+            </class>
+        </classes>
+    </test>
+
+</suite>
+
+<!-- Not paralel teste ayni anda calistitrken eger statik in driverini kullanirsak sikinti yaratir cunku tek driver ikisini yapmaya calisiyor
+ ama driveri staticten kaldirirsak her biri kendi driver ini kullanir. Paralel teste bazi sikintilar cikabiliyor mesela sout ile
+ ciktilari alirken gercek haytta database , virtual machine ile yapilir yani donanim paraleli ile yapiliyor
+ Virtual Machine : bir server da 3 farkli pc varmis gibi calistiriyorsun ve paralel test sikinti olmuyor paralel test zamandan kazanmak icin yapilir
+ 3 virtual machine  chrome->2 hours firefox->2 hours edge-> 2 hours yerine hepsi 2 saat suruyor
+ Donanimsal paralel test
+ Ornek loglama yapacan ayni anda 3 browserda loggin yapacan giris kaydini tutamazsin cunku 3 farkli browserda giris yapiliyor-->

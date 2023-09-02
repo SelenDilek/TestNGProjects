@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- burasi notlarimiz -->
+
+<suite name="mySuite">
+    <test name="myTest1">
+        <classes>
+
+            <class name="Gun03._02_Intro"></class>
+        </classes>
+    </test>
+
+    <test name="myTest2">
+        <classes>
+
+            <class name="Gun03._03_Intro"></class>
+        </classes>
+    </test>
+</suite>
+
+
+        <!--
+        Before Suite
+
+
+                Before Test      Her class kendi BeforeTest ve AfterTestini çalıştırır
+
+                Before Class
+                Before Method
+                Intro2 -> Test1
+                After Method
+                Before Method
+                Intro2 -> Test2
+                After Method
+                After Class
+
+                After Test     Her class kendi BeforeTest ve AfterTestini çalıştırır
+
+                Intro3 -> Test1
+                Intro3 -> Test2
+                After Suite
+        -->
