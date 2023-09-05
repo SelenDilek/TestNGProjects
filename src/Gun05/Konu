@@ -1,0 +1,15 @@
+Birden cok test olsaydi ne yapardik mesela 20 tane test olsaydi ve paralel calistirilacak olsaydik.
+
+verileri aktarırken
+veya saklarken veya gönderirken
+manalı ve ayrıştırılabilir
+olması için veri şablonları
+oluşturulmuştur.
+
+XML yapısı, bunun gibidir
+</>
+
+json
+veri gönderip almak içinde
+{"isim","ismet"}
+{"soyad", "temur"}

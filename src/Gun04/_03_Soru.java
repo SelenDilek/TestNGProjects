@@ -53,5 +53,26 @@ public class _03_Soru extends BaseDriverParameter {
 
         }
 
+
+
+        //Hocanin cozumu :
+
+
+        WebElement specialss = driver.findElement(By.linkText("Specials"));
+        specialss.click();
+
+        List<WebElement> newPrices = driver.findElements(By.cssSelector("span[class='price-new']"));
+        List<WebElement> oldPrices = driver.findElements(By.cssSelector("span[class='price-old']"));
+
+        Assert.assertTrue(newPrices.size() == oldPrices.size(), "hepsinde indirim bulunamadı"); // eski ve yeni fiyati var mi?
+
+        for (int i = 0; i < newPrices.size(); i++) {
+            double newPrice = Double.parseDouble(newPrices.get(i).getText().replaceAll("[^0-9.,]", ""));
+            double oldPrice = Double.parseDouble(oldPrices.get(i).getText().replaceAll("[^0-9.,]", ""));
+
+            System.out.println(newPrice+" "+oldPrice);
+            Assert.assertTrue(newPrice < oldPrice, "Yeni fiyat eski fiyattan küçük değil"); // 4-
+        }
+
     }
 }
