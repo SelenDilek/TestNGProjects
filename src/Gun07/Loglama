@@ -1,0 +1,33 @@
+bIR YERDE BILGI SAKLAMA ve dosyaya yazilmasi loglama. Nerde kim ne yapmis bilgi verme islemi.Mesala bankacilikta.
+Kim ne yapti sistemde. Testerlar ise: Bu test basladi bu asamadayiz gerekirse uyari verdiririz. Hassas bolume gecildi
+v.s dosyaya yazilabilir ekrana yazilabilir. Logger kutuphanedir. Eklenerek kullanilir.
+
+JUL= Java unit Logger (JDK icin).
+
+
+///////////////////////////////////////
+JUL
+Logger logger= Logger.getLogger(""); // output yapılan logları al.
+logger.setLevel(Level.SEVERE); // sadece ERROR ları göster
+
+
+Loglama : program çalışırken, gerekli adımlara eklenen
+          çıktılar : ekrana, dosyaya yazılır
+
+işlemler hakkında bilgi veriyor, güvenlik açısından
+yapılan işlemler saklanır. kim ne yaptıu sistemde
+
+Logger kütüphanesi :
+Log4J (1)-> apache grubu  log for Java
+JUL   -> Javacılar bbizim başımız kel mi Java nın kendi Logger
+SLF4J -> sonra bu piyasaya çıkıyor (JUL kullanarak yapıyor)
+Log4J2 ->  Log4J   2.versiyonu
+
+
+API VE CORE beraber yuklenir.(proje sag tik- open setting module-library-from maven-ok-apply)
+org.apache.logging.log4j:log4j-api:2.20.0
+org.apache.logging.log4j:log4j-core:2.20.0
+
+XML de dosya olustururz ayarlari icin nereye yazacak diye appenders(tanimlama bolumu) icine yazilir. loggers kismi cagirma bolumu/calistirma bolumu.
+loggers da root yazarsak sadece ekrana yazar ama bilgi verecez ne yazacaz hangi seviyede yazacak mesala INFO,WARNING,ERROR,DEBUG,FATAL
+hangisini secersek ondan sonrasini gosterir. (mesela biz javaya logger severe demistik base driver da)

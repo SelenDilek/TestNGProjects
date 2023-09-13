@@ -1,0 +1,61 @@
+----------
+product owner : Birimler müdürü
+
+Business user :iş veren : müşteri
+BA -> analiz
+
+Takım Lideri
+Scrum Master
+Dev lead
+Dev
+Test lead
+tester
+
+
+Business User -> BA -> Developer
+Developer yazmaya başlar
+   -> Kendi kodunu test eder (Unit test),
+   -> Önce test sonra kodlama yapar
+   -> test geçti yazılım bitti
+-> tester a verdi. tester developerın
+   yazdığının çalıştığını test etti
+(unit) Test Driven Development -> TDD denir.
+test odaklı geliştirme
+
+Business User -> BA -> Developer + Tester
+Tester da başlasın test kolarını yazmaya
+Dev de başlasın kodlamaya
+
+Testter Business userın isteğini dev yapmı mı ?
+(last user) Behavior Driven Development  -> BDD
+Davranış odaklı geliştirme
+
+Agile -> şunu der, yaptığını sürekli müşteriye
+göster, müşteriyi sürekli işin içinde tut.
+böylece emeğin boşa gitmesin.
+
+BDD i tamam
+
+test case leri yazarken isimlendirme
+
+TC_TNM_KUL_01 -> test case (senaryo) -> TestNG %65
+
+Önce siteye git                  -> test case in STEP 1
+Sonra Login bilgilerini gönder      STEP 2
+Sonra girdiği doğrula               STEP 3
+
+Cucumber Tool u %35
+BDD Test Tool
+Agile a tam uygun
+
+“ Agile methodolojisi ile iş yapıyorsanız ve uygulama testi için
+BDD kullanmıyorsanız kendinizle çelişiyorsunuzdur. ”
+
+--------
+senaryolarını -> FeatureFiles (siteye git)
+steps         -> StepDefinitions
+POM           -> Pages
+Utilities     -> Driver ve gerekli bileşenler
+çalıştırıcı   -> Runners
+Kendi hazırladığımı her projede kullanabileceğimiz
+dosyalardan oluşan şablona FRAMEWORK denir.

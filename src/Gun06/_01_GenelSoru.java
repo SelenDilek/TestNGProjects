@@ -1,7 +1,6 @@
 package Gun06;
 
 import Utility.BaseDriver;
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -13,7 +12,7 @@ import java.util.List;
   1- Brands menusune gidiniz.
   2- Burada her bir markanın üstünde yer alan harf ile başladığını doğrulayınız
 */
-public class _06_GenelSoru extends BaseDriver {
+public class _01_GenelSoru extends BaseDriver {
     //elemntin altinda elementler bulma yontemi :
 
     @Test
